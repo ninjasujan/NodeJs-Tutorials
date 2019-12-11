@@ -5,6 +5,7 @@ const requestHandler = (req, res) => {
 
     if(req.url === '/') {
         res.statusCode = 302;
+    
         res.setHeader('Content-Type', 'text/html');
         res.write(`
             <html>
