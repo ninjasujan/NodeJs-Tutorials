@@ -6,7 +6,7 @@ const newMarks = [...marks, 25, 78];
 console.log(newMarks);
 
 const toArray = (...args) => {
-    console.log('Number of argumnet passed', args.length)
+    console.log('Number of argumnet passed', args.length);
     return args;
 };
 
