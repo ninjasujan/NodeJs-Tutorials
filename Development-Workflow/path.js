@@ -4,7 +4,7 @@ const fs = require('fs');
 const requestHandler = (req, res) => {
     if(req.url === '/') {
         res.setHeader('Content-Type', 'text/html');
-        res.write(`
+        res.write(` 
             <htmL>
             <head><title>NodeJs Basic</title></head>
             <body>
@@ -15,7 +15,7 @@ const requestHandler = (req, res) => {
             </body>
             </html>
         `); 
-        return res.end();
+     return res.end();
     }
     if(req.url === '/message' && req.method === 'POST') {
         const body = [];

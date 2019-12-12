@@ -4,7 +4,7 @@ const http = require('http');
 const routes = require('./path');
 
 // creating server unsing http module
-const server = http.createServer(routes.handler);
+const server = http.createServer(routes.handler); 
 
 // listening to port 
 server.listen(4000, () => {
