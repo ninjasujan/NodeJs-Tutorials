@@ -15,5 +15,4 @@ router.get('/list', (req, res, next) => {
     res.sendFile(path.join(rootDir, 'views', 'list.html'));
 });
 
-
 module.exports = router;
