@@ -10,8 +10,16 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     console.log('In the middleware 1');
-    console.log(adminData.products);
-    res.sendfile(path.join(rootDir, 'views', 'shop.html'));
+    const products = adminData.products;
+    res.render('shop', {
+        prods: products, 
+        pageTitle: 'shop list', 
+        path: '/', 
+        hasProduct: products.length > 0,
+        activeShop: true,
+        productCss: true,
+        layout: false
+    });
 });
 
 module.exports = router;
