@@ -1,5 +1,11 @@
+
+
 .form-control {
     margin: 1rem 0;
+}
+
+.centered {
+    text-align: center;
 }
 
 .form-control label,
@@ -20,4 +26,4 @@
 .form-control input:focus
 .form-control textarea:focus {
     outline-color: #00695c;
-}
+} 

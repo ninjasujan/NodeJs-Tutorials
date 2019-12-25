@@ -14,6 +14,7 @@ const errorController = require('./controller/error');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join('/', 'home', 'user')));
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
